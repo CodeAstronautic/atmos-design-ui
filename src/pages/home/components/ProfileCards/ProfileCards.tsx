@@ -97,7 +97,7 @@ const ProfileCards: React.FC = () => {
   };
 
   return (
-    <div className={`py-10 relative slider-cards ${styles.sliderWrapper}`}>
+    <div className={`py-10 relative slider-cards max-[479px]:pt-2 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
         {data.map((person, index) => (
           <div key={index} className={`py-4 ${activeSlide === index ? 'slick-current' : ''}`}>
