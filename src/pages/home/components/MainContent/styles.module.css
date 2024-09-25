@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 500ms ease-in-out;
+  }
+  
+
+  .customCheckbox {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    width: 20px;
+    height: 20px; 
+    background-color: white; 
+    border: 1px solid transparent; 
+    border-radius: 5px;  
+    cursor: pointer; 
+    display: flex;             
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .customCheckbox:checked {
+    background-color: #E8ECFF; 
+  }
+  
+
+  .customCheckbox:checked::before {
+    content: '\2714';
+    font-size: 16px;    
+    font-weight: 900;
+    color: #2C599B;     
+  }

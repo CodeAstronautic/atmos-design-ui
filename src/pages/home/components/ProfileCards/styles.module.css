@@ -1,0 +1,40 @@
+.sliderWrapper {
+    position: relative;
+  }
+  
+  .slick-sprev {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  .sliderWrapper > .slick-slide{
+    width: max-content !important;
+    transform: scale(0.7);
+
+  }
+  .slick-slide.slick-active.slick-center {
+    transform: scale(1.2);
+  }
+  
+  .slick-snext {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  
+  .prevArrow,
+  .nextArrow {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .slide {
+    text-align: center;
+    font-size: 2rem;
+    padding: 40px;
+    background: #ccc;
+    border: 1px solid #ddd;
+  }
+  
+

@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the elements */
+  .fadeIn {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 500ms ease-in forwards;
+  }
