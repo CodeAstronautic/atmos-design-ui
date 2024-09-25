@@ -9,12 +9,11 @@ import polygonDown from '../../../../assets/polygon-down.svg'
 import styles from './styles.module.css'
 
 import Image from 'next/image';
-import SliderComponent from '../SliderComponent/SliderComponent';
 
 interface Option {
   id: number;
   label: string;
-  checked: boolean; 
+  checked: boolean;
 
 }
 
@@ -22,10 +21,10 @@ const MainContent: React.FC = () => {
 
 
   const [options, setOptions] = useState<Option[]>([
-    { id: 1, label: '한국어 능력', checked: true }, 
+    { id: 1, label: '한국어 능력', checked: true },
     { id: 2, label: '업무 수행 능력', checked: true },
-    { id: 3, label: '검업 여부', checked: true },   
-    { id: 4, label: '평판 조회', checked: true },    
+    { id: 3, label: '검업 여부', checked: true },
+    { id: 4, label: '평판 조회', checked: true },
   ]);
 
   const handleCheckboxChange = (id: number) => {
@@ -39,17 +38,16 @@ const MainContent: React.FC = () => {
   return (
     <main className="flex flex-col pb-20 px-20 max-[768px]:px-4 rounded-none ">
       <div className="mt-[60px] max-w-full w-[1680px] max-md:mt-10">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:flex-col">
+          <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
             <HeroSection />
             <FeatureSection />
           </div>
-          <div className="flex flex-col  w-6/12 max-md:ml-0 max-md:w-full">
+          <div className="flex flex-col  w-full max-md:ml-0 max-md:w-full">
             <div className="flex flex-col w-full max-md:mt-3.5 max-md:max-w-full">
-              <div className={`flex flex-wrap gap-10 self-end max-w-full font-black w-[553px] max-[768px]:w-full max-md:justify-center ${styles.fadeIn}`}>
+              <div className={`flex flex-wrap gap-10 self-end max-w-full font-black w-full max-[768px]:w-full justify-center ${styles.fadeIn}`}>
                 <div className="flex gap-2.5 items-center px-4 py-2 text-lg text-teal-500 bg-emerald-50 rounded-lg relative">
                   <Image loading="lazy" src={dollorIcon} alt="" className="object-contain shrink-0 self-stretch my-auto rounded-none aspect-square w-[26px]" />
-                  {/* <div className="self-stretch my-auto">월 100만원</div> */}
                   <CommonButton onClick={() => { }} className="px-0 !bg-emerald-50 text-[#14b8a6] ">
                     월 100만원
 
@@ -58,28 +56,19 @@ const MainContent: React.FC = () => {
                 </div>
 
               </div>
-              {/* <div className="flex flex-wrap gap-5 justify-between items-center mt-8 max-w-full w-[632px] max-[768px]:w-full"> */}
               <ProfileCards />
-              {/* <SliderComponent/> */}
-              {/* </div> */}
             </div>
             <div className='grid grid-cols-2  md:hidden'>
               {options.map((option) => (
                 <div key={option.id} className="flex items-center text-white">
-                  {/* <input
+
+                  <input
                     type="checkbox"
                     id={`checkbox-${option.id}`}
                     checked={option.checked}
                     onChange={() => handleCheckboxChange(option.id)}
-                    className="w-5 h-5 bg-[#E8ECFF] text-[#2C599B] rounded-lg checked:accent-[#E8ECFF]"
-                  /> */}
-                  <input
-    type="checkbox"
-    id={`checkbox-${option.id}`}
-    checked={option.checked}
-    onChange={() => handleCheckboxChange(option.id)}
-    className={styles?.customCheckbox} 
-/>
+                    className={styles?.customCheckbox}
+                  />
                   <label htmlFor={`checkbox-${option.id}`} className="ml-2">
                     {option.label}
                   </label>
@@ -93,7 +82,6 @@ const MainContent: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <ServiceSection />   */}
     </main>
   );
 };

@@ -6,7 +6,7 @@
     transform: scale(0.8);
     opacity: 0.5;
   }
-  .sliderWrapper > .slick-slide{
+  .slick-slide{
     width: max-content !important;
     transform: scale(0.7);
 
@@ -36,5 +36,5 @@
     background: #ccc;
     border: 1px solid #ddd;
   }
-  
+    
 

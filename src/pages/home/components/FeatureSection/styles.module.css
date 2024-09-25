@@ -7,8 +7,7 @@
     }
   }
   
-  /* Apply the animation to the elements */
   .fadeIn {
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     animation: fadeIn 500ms ease-in forwards;
   }

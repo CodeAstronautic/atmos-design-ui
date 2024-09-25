@@ -1,26 +1,26 @@
 
 
   .sliderWrapper {
-    width: 100%; /* Adjust as necessary */
-    margin: 0 auto; /* Center the slider */
+    width: 100%; 
+    margin: 0 auto; 
   }
   
   .serviceCard {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Adjust height based on your content */
+    height: 300px;
   }
   
   .slider {
     display: flex;
     flex-direction: row;
-    animation: slideLeft 30s linear infinite; /* Adjust speed as needed */
+    animation: slideLeft 30s linear infinite;
   }
   
   .fadeIn {
     opacity: 0;
-    animation: fadeIn 500ms ease forwards; /* Fade in over 500ms */
+    animation: fadeIn 500ms ease forwards;
   }
   
   @keyframes fadeIn {
@@ -38,9 +38,9 @@
     }
   }
   
-  /* Adjust the gap and card style */
+
   .ServiceCard {
-    flex-shrink: 0; /* Prevent shrinking */
-    margin-right: 2.5rem; /* Adjust as needed */
+    flex-shrink: 0;
+    margin-right: 2.5rem; 
   }
   

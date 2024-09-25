@@ -1,21 +1,19 @@
 import React from 'react';
-import styles from './styles.module.css'; 
+import styles from './styles.module.css';
 import polygonDown from '../../../../assets/polygon-down.svg'
 import Image from 'next/image';
 import CommonButton from '@/components/CommonButton/CommonButton';
 
 
 const HeroSection: React.FC = () => {
-    return (
+  return (
     <section className="flex flex-col gap-4 mt-10 max-sm:mt-0 w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-9 max-w-full w-[449px]">
         <div className={`flex overflow-hidden flex-col justify-center ${styles.fadeIn}`}>
-          {/* <div className="gap-2.5 px-3 py-1.5 text-lg font-black text-cyan-400 bg-white rounded-lg">
+
+          <CommonButton onClick={() => { }} className="font-black text-[18px] text-[#40E2E8]">
             풀타임, 파트타임
-          </div> */}
-       <CommonButton onClick={() => {}} className="font-black text-[18px] text-[#40E2E8]">
-       풀타임, 파트타임
-    </CommonButton>
+          </CommonButton>
           <div className="flex gap-2.5 items-start self-start px-2.5">
             <Image loading="lazy" src={polygonDown} alt="" className="object-contain w-3.5 rounded-sm aspect-square" />
           </div>

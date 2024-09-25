@@ -1,9 +1,0 @@
-.sliderRight{
-    transform: scale(0.7);
-}
-    .slick-slide {
-        transform: scale(0.7);
-    }
-    .slick-slide.slick-active.slick-center {
-        transform: scale(1.2);
-    }

@@ -7,8 +7,6 @@ import ServiceSection from "./components/ServiceSection/ServiceSection";
 export const Home = () => {
 
   const handleInquiryClick = () => {
-    // Handle inquiry button click
-    alert("Inquiry button clicked!");
   };
 
   const footerProps = {
@@ -25,18 +23,18 @@ export const Home = () => {
   return (
     <div>
       <div className={styles.bannerContent}>
-      <div className="container mx-auto">
-      <Header onInquiryClick={handleInquiryClick}/>
-      <MainContent/>
-      </div> 
-      <div className="pb-16 ml-[16.5rem] max-[1600px]:ml-[7rem] max-[1440px]:ml-[10rem] max-[1200px]:ml-[10.5rem] max-[1024px]:ml-[5rem] max-[771px]:ml-4 max-md:hidden">
-      <ServiceSection  />
+        <div className="container mx-auto">
+          <Header onInquiryClick={handleInquiryClick} />
+          <MainContent />
+        </div>
+        <div className="pb-16 ml-[16.5rem] max-[1600px]:ml-[7rem] max-[1440px]:ml-[10rem] max-[1200px]:ml-[10.5rem] max-[1024px]:ml-[5rem] max-[771px]:ml-4 max-md:hidden">
+          <ServiceSection />
 
-      </div>
+        </div>
 
       </div>
       <div className="bg-[#FBFBFB]">
-      <Footer {...footerProps} />
+        <Footer {...footerProps} />
 
       </div>
     </div>

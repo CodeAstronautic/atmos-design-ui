@@ -21,9 +21,9 @@ const FeatureSection: React.FC = () => {
   return (
     <section className="mt-14 w-full max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
-  
+
         <div className={`flex flex-col  w-[82%] max-md:ml-0 max-md:w-full ${styles?.fadeIn}`}>
-          <div className="flex flex-wrap gap-10 items-start font-black max-md:mt-6 max-md:hidden">
+          <div className="flex flex-wrap gap-8 items-start font-black max-md:mt-6 max-md:hidden">
             {features.map((feature, index) => (
               <FeatureCard key={index} title={feature.title} description={feature.description} />
             ))}

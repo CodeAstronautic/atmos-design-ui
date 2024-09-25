@@ -89,13 +89,6 @@ const Footer: React.FC<FooterProps> = ({
                 
                     </div>
                   </div>
-                  {/* <div className="flex flex-col ml-5 w-6/12 max-md:w-full">
-                    <div className="flex gap-4 self-stretch my-auto ">
-                      {leftInfo?.services.slice(2).map((service, index) => (
-                        <ServiceFooter key={index} {...service} />
-                      ))}
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>

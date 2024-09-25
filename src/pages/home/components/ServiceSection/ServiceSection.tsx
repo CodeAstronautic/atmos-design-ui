@@ -22,32 +22,32 @@ const services = [
 const ServiceSection: React.FC = () => {
 
   const settings = {
-    dots: false,               
-    infinite: true,         
-    speed: 500,              
-    slidesToShow: 5,           
-    slidesToScroll: 1,        
-    autoplay: true,           
-    autoplaySpeed: 5000,      
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: false,
     cssEase: "linear",
     responsive: [
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 4, 
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 992, 
+        breakpoint: 992,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
         },
       },
       {
@@ -57,9 +57,9 @@ const ServiceSection: React.FC = () => {
         },
       },
       {
-        breakpoint: 480, 
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1, 
+          slidesToShow: 1,
         },
       },
     ],

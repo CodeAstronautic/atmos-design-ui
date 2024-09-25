@@ -1,68 +1,9 @@
-// import React, { useState } from 'react';
-// import Image from 'next/image';
-// import logo from '../../assets/logo.svg'
-// import accordion from '../../assets/accordion.svg'
-// import CommonButton from '../CommonButton/CommonButton';
-// // import './style.css'
-
-// type HeaderProps = {
-//   onInquiryClick: () => void;
-// };
-
-// const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
-
-//   const [isDropdownOpen, setDropdownOpen] = useState<boolean>(false);
-
-//   const toggleDropdown = () => {
-//     setDropdownOpen((prev) => !prev);
-//   };
-//   return (
-//     <div className="w-full  py-[18px] flex flex-wrap gap-5 justify-between items-center self-center max-w-full text-base font-black text-center ">
-
-//     <div className='flex items-center gap-3'>
-//     <Image
-//       src={logo}
-//       alt="Company logo"
-//       width={60}
-//       height={60}
-//       loading="lazy"
-//       className="object-contain shrink-0 self-stretch my-auto max-w-full aspect-[5.43] w-[114px]"
-//       />
-     
-//     </div>
-//       <nav className="flex gap-10 justify-center items-start self-stretch my-auto text-white">
-//       <div className="flex gap-2 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
-//         <div className="self-stretch my-auto">채용</div>
-//         <Image
-//           loading="lazy"
-//           src={accordion}
-//           alt=""
-//           className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-//         />
-//       {isDropdownOpen && (
-//         <div className="absolute bg-white text-left rounded shadow-lg top-[30px]">
-//           <div className="text-[#344054] font-bold px-4 py-2.5">채용</div>
-//           <div className="text-[#344054] font-medium px-4 py-2.5">Dropdown Item 1</div>
-//           <div className="text-[#344054] font-medium px-4 py-2.5">Dropdown Item 2</div>
-//           <div className="text-[#344054] font-medium px-4 py-2.5">Dropdown Item 3</div>
-//         </div>
-//       )}
-//       </div>
-//         <div className=''>해외 개발자 활용 서비스</div>
-//       </nav>
- 
-//       <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF]">
-//       문의하기
-//     </CommonButton>
-//     </div>
-//   );
-// };
-
-// export default Header;
 import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../assets/logo.svg';
 import accordion from '../../assets/accordion.svg';
+import accordionBlack from '../../assets/accordion-black.svg';
+import menuIcon from '../../assets/menu-icon.svg';
 import CommonButton from '../CommonButton/CommonButton';
 
 type HeaderProps = {
@@ -115,28 +56,25 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
         <div>해외 개발자 활용 서비스</div>
       </nav>
 
-      {/* Mobile Menu Button */}
       <div className="md:hidden">
         <button onClick={toggleMobileMenu} className="text-white">
-          <Image src={accordion} alt="Menu" className="w-6 h-6" />
+          <Image src={menuIcon} alt="Menu" className="w-6 h-6" />
         </button>
       </div>
 
-      {/* Inquiry Button */}
       <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF] max-sm:hidden">
         문의하기
       </CommonButton>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-[60px] left-0 w-full bg-white text-black rounded shadow-lg p-4 flex flex-col z-50">
-          <div className="flex gap-2 items-center" onClick={toggleDropdown}>
+        <div className="absolute top-[60px] left-0 w-full bg-white text-black  shadow-lg p-4 flex flex-col z-50">
+          <div className="flex gap-2 items-center justify-center" onClick={toggleDropdown}>
             <div className="font-bold">채용</div>
             <Image
               loading="lazy"
-              src={accordion}
+              src={accordionBlack}
               alt=""
-              className="object-contain w-4"
+              className="object-contain w-4 "
             />
           </div>
           {isDropdownOpen && (
