@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 const data = [
   {
-    name: "Parth Gupta",
+    name: "Abhishek Gupta",
     role: "마케팅",
     experience: "2y+",
     avatar: avtar,
@@ -23,7 +23,7 @@ const data = [
     flag: flag,
   },
   {
-    name: "Yug Gupta",
+    name: "Abhishek Gupta",
     role: "마케팅",
     experience: "2y+",
     avatar: avtar,
