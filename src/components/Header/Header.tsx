@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
           </div>
           {isDropdownOpen && (
             <div className="bg-gray-100 p-2 rounded">
-                           <div className="text-[#344054] font-bold px-4 py-2.5">채용</div>
+              <div className="text-[#344054] font-bold px-4 py-2.5">채용</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">해외 개발자 원격 채용</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">외국인 원격 채용 (비개발 직군)</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">한국어 가능 외국인 채용</div>
