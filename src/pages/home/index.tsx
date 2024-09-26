@@ -1,15 +1,14 @@
 import Header from "@/components/Header/Header";
-import styles from "./styles.module.css";
 import MainContent from "../../components/Home/MainContent/MainContent";
 import Footer from "@/components/Footer/Footer";
 import ServiceSection from "../../components/Home/ServiceSection/ServiceSection";
 import { footerProps } from "@/utils/constant";
 
-const Home = () => {
-  const handleInquiryClick = () => { };
+ const Home = () => {
+  const handleInquiryClick = () => {};
   return (
     <div>
-      <div className={styles.bannerContent}>
+      <div className="bannerContent">
         <div className="container mx-auto">
           <Header onInquiryClick={handleInquiryClick} />
           <MainContent />
@@ -24,4 +23,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home
+export  default Home

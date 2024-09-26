@@ -26,7 +26,9 @@ body {
     text-wrap: balance;
   }
 }
-
+.bannerContent{
+  background: linear-gradient(151.17deg, #26C2B9 8.69%, #288BE7 126.06%);
+}
 @font-face {
   font-family: 'Poppins';
   src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2');
@@ -173,7 +175,4 @@ body {
   
   }
 
-}
-.bannerContent{
-  background: linear-gradient(151.17deg, #26C2B9 8.69%, #288BE7 126.06%);
 }
