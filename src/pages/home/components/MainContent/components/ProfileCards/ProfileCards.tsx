@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
-import avtar from '../../../../assets/avtar.svg';
-import flag from '../../../../assets/flag.svg';
+import avtar from '../../../../../../assets/image/avtar.svg';
+import flag from '../../../../../../assets/image/flag.svg';
 import styles from './styles.module.css';
 
 const data = [
   {
-    name: "Abhishek Gupta",
+    name: "Parth Gupta",
     role: "마케팅",
     experience: "2y+",
     avatar: avtar,
@@ -23,7 +23,7 @@ const data = [
     flag: flag,
   },
   {
-    name: "Abhishek Gupta",
+    name: "Yug Gupta",
     role: "마케팅",
     experience: "2y+",
     avatar: avtar,

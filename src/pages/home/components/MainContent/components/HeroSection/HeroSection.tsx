@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
-import polygonDown from '../../../../assets/polygon-down.svg'
-import polygonDownMobile from '../../../../assets/poligon-mobile.svg'
+import polygonDown from '../../../../../../assets/image/icon/polygon-down.svg'
+import polygonDownMobile from '../../../../../../assets/image/icon/poligon-mobile.svg'
 import Image from 'next/image';
 import CommonButton from '@/components/CommonButton/CommonButton';
 

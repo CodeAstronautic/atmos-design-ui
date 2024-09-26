@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from '../../assets/logo.svg';
-import accordion from '../../assets/accordion.svg';
-import accordionBlack from '../../assets/accordion-black.svg';
-import menuIcon from '../../assets/menu-icon.svg';
+import logo from '../../assets/image/logo.svg';
+import accordion from '../../assets/image/icon/accordion.svg';
+import accordionBlack from '../../assets/image/icon/accordion-black.svg';
+import menuIcon from '../../assets/image/icon/menu-icon.svg';
 import CommonButton from '../CommonButton/CommonButton';
 
 type HeaderProps = {
@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
 
       <nav className="hidden md:flex gap-10 justify-center items-start self-stretch my-auto text-white">
         <div className="flex gap-2 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
-          <div className="self-stretch my-auto">채용</div>
+          <div className="self-stretch my-auto font-[poppins]">채용</div>
           <Image
             loading="lazy"
             src={accordion}
@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
           />
           {isDropdownOpen && (
             <div className="absolute bg-white text-left rounded shadow-lg top-[30px]">
-              <div className="text-[#344054] font-bold px-4 py-2.5">채용</div>
+              <div className="text-[#344054] font-bold px-4 py-2.5 ">채용</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">해외 개발자 원격 채용</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">외국인 원격 채용 (비개발 직군)</div>
               <div className="text-[#344054] font-medium px-4 py-2.5">한국어 가능 외국인 채용</div>

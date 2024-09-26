@@ -4,12 +4,12 @@ import FooterInfo from './FooterInfo/FooterInfo';
 import Image from 'next/image';
 import ServiceFooter from './ServiceFooter/ServiceFooter';
 import ContactInfo from './ContactInfo/ContactInfo';
-import footerLogo from '../../assets/footer-logo.svg'
-import serviceCodeIcon from '../../assets/service-code-icon.svg'
-import serviceAvtarIcon from '../../assets/service-avatar-icon.svg'
-import servicKorIcon from '../../assets/service-kor-icon.svg'
-import servicSettingIcon from '../../assets/service-setting-icon.svg'
-import arrowRight from '../../assets/arrow-right.svg'
+import footerLogo from '../../assets/image/footer-logo.svg'
+import serviceCodeIcon from '../../assets/image/icon/service-code-icon.svg'
+import serviceAvtarIcon from '../../assets/image/icon/service-avatar-icon.svg'
+import servicKorIcon from '../../assets/image/icon/service-kor-icon.svg'
+import servicSettingIcon from '../../assets/image/icon/service-setting-icon.svg'
+import arrowRight from '../../assets/image/icon/arrow-right.svg'
 
 interface FooterProps {
   companyName: string;
@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
 
 
-    const leftInfo = {
+    const contactInfo = {
         logoSrc: footerLogo,
         description: "우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.",
         phone: "010-0000-0000",
@@ -75,15 +75,15 @@ const Footer: React.FC<FooterProps> = ({
         <div className="w-full max-md:max-w-full">
           <div className="flex gap-20 max-[768px]:gap-8 max-md:flex-col">
             <div className="flex flex-col w-[28%] max-md:w-full gap-4">
-              <Image src={leftInfo?.logoSrc} alt="Company Logo" />
-              <ContactInfo description={leftInfo?.description} phone={leftInfo?.phone} email={leftInfo?.email} />
+              <Image src={contactInfo?.logoSrc} alt="Company Logo" />
+              <ContactInfo description={contactInfo?.description} phone={contactInfo?.phone} email={contactInfo?.email} />
             </div>
             <div className="flex flex-col  w-[76%] max-md:w-full">
               <div className="w-full  max-md:max-w-full ">
                 <div className="flex gap-5 max-md:flex-col">
                   <div className="flex flex-col  max-md:w-full">
                     <div className="grid grid-cols-4 max-[576px]:grid-cols-2 grow gap-4 items-center ">
-                      {leftInfo?.services.map((service, index) => (
+                      {contactInfo?.services.map((service, index) => (
                         <ServiceFooter key={index} {...service} />
                       ))}
                 
