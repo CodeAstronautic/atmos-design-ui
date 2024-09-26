@@ -5,8 +5,8 @@ import Footer from "@/components/Footer/Footer";
 import ServiceSection from "../../components/Home/ServiceSection/ServiceSection";
 import { footerProps } from "@/utils/constant";
 
-export const Home = () => {
-  const handleInquiryClick = () => {};
+const Home = () => {
+  const handleInquiryClick = () => { };
   return (
     <div>
       <div className={styles.bannerContent}>
@@ -24,3 +24,4 @@ export const Home = () => {
     </div>
   );
 };
+export default Home
