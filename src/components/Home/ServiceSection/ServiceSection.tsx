@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceCard from './components/ServiceCard/ServiceCard';
+import ServiceCard from './ServiceCard';
 import marketingIcon from '../../../assets/image/icon/marketing.svg'
 import galleryIcon from '../../../assets/image/icon/gallery-icon.svg'
 import boxIcon from '../../../assets/image/icon/box-icon.svg'

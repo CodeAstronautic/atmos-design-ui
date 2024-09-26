@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import HeroSection from './components/HeroSection/HeroSection';
-import FeatureSection from './components/FeatureSection/FeatureSection';
-import ProfileCards from './components/ProfileCards/ProfileCards';
+import HeroSection from './HeroSection/HeroSection';
+import FeatureSection from './FeatureSection/FeatureSection';
+import ProfileCards from './ProfileCards/ProfileCards';
 import CommonButton from '@/components/CommonButton/CommonButton';
 import dollorIcon from '../../../assets/image/icon/dollorIcon.svg'
 import polygonDown from '../../../assets/image/icon/polygon-down.svg'
