@@ -3,8 +3,8 @@ import HeroSection from './components/HeroSection/HeroSection';
 import FeatureSection from './components/FeatureSection/FeatureSection';
 import ProfileCards from './components/ProfileCards/ProfileCards';
 import CommonButton from '@/components/CommonButton/CommonButton';
-import dollorIcon from '../../../../assets/image/icon/dollorIcon.svg'
-import polygonDown from '../../../../assets/image/icon/polygon-down.svg'
+import dollorIcon from '../../../assets/image/icon/dollorIcon.svg'
+import polygonDown from '../../../assets/image/icon/polygon-down.svg'
 import styles from './styles.module.css'
 
 import Image from 'next/image';

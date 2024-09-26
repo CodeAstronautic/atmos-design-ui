@@ -1,8 +1,8 @@
 import Header from "@/components/Header/Header";
 import styles from './styles.module.css';
-import MainContent from "./components/MainContent/MainConent";
+import MainContent from "../../components/Home/MainContent/MainConent";
 import Footer from "@/components/Footer/Footer";
-import ServiceSection from "./components/ServiceSection/ServiceSection";
+import ServiceSection from "../../components/Home/ServiceSection/ServiceSection";
 
 export const Home = () => {
 

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
-import avtar from '../../../../../../assets/image/avtar.svg';
-import flag from '../../../../../../assets/image/flag.svg';
+import avtar from '../../../../../assets/image/avtar.svg';
+import flag from '../../../../../assets/image/flag.svg';
 import styles from './styles.module.css';
 
 const data = [

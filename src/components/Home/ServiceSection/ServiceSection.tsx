@@ -1,10 +1,10 @@
 import React from 'react';
 import ServiceCard from './components/ServiceCard/ServiceCard';
-import marketingIcon from '../../../../assets/image/icon/marketing.svg'
-import galleryIcon from '../../../../assets/image/icon/gallery-icon.svg'
-import boxIcon from '../../../../assets/image/icon/box-icon.svg'
-import targetIcon from '../../../../assets/image/icon/target-icon.svg'
-import phoneIcon from '../../../../assets/image/icon/phone-icon.svg'
+import marketingIcon from '../../../assets/image/icon/marketing.svg'
+import galleryIcon from '../../../assets/image/icon/gallery-icon.svg'
+import boxIcon from '../../../assets/image/icon/box-icon.svg'
+import targetIcon from '../../../assets/image/icon/target-icon.svg'
+import phoneIcon from '../../../assets/image/icon/phone-icon.svg'
 import styles from './styles.module.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
