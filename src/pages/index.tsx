@@ -1,9 +1,14 @@
 // pages/index.js
 import React from 'react';
 import Home from './home';
+import { NextPage } from 'next';
+import { User } from '@/interface/types';
 
-const HomePage = ({ users }: any) => {
-  return <Home users={users}/>;
+interface ProfileCardsProps {
+  users: User[];
+}
+const HomePage: NextPage<ProfileCardsProps> = ({ users }) => {
+  return <Home users={users} />;
 };
 
 export const getServerSideProps = async () => {
@@ -12,7 +17,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      users:data,
+      users: data,
     },
   };
 };

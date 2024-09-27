@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import HeroSection from "./HeroSection/HeroSection";
-import FeatureSection from "./FeatureSection/FeatureSection";
-import ProfileCards from "./ProfileCards/ProfileCards";
-import dollorIcon from "../../../assets/image/icon/dollorIcon.svg";
-import polygonDown from "../../../assets/image/icon/polygon-down.svg";
-import styles from "./styles.module.css";
+import React, { useState } from 'react';
+import HeroSection from './HeroSection/HeroSection';
+import FeatureSection from './FeatureSection/FeatureSection';
+import ProfileCards from './ProfileCards/ProfileCards';
+import dollorIcon from '../../../assets/image/icon/dollorIcon.svg';
+import polygonDown from '../../../assets/image/icon/polygon-down.svg';
+import styles from './styles.module.css';
 
-import Image from "next/image";
-import { User } from "@/interface/types";
-import CommonButton from "@/components/atoms/CommonButton/CommonButton";
+import Image from 'next/image';
+import { User } from '@/interface/types';
+import CommonButton from '@/components/atoms/CommonButton/CommonButton';
 
 interface Option {
   id: number;
@@ -19,19 +19,17 @@ interface ProfileCardsProps {
   users: User[];
 }
 
-const MainContent: React.FC<ProfileCardsProps> = ({users}) => {
+const MainContent: React.FC<ProfileCardsProps> = ({ users }) => {
   const [options, setOptions] = useState<Option[]>([
-    { id: 1, label: "한국어 능력", checked: true },
-    { id: 2, label: "업무 수행 능력", checked: true },
-    { id: 3, label: "검업 여부", checked: true },
-    { id: 4, label: "평판 조회", checked: true },
+    { id: 1, label: '한국어 능력', checked: true },
+    { id: 2, label: '업무 수행 능력', checked: true },
+    { id: 3, label: '검업 여부', checked: true },
+    { id: 4, label: '평판 조회', checked: true },
   ]);
 
   const handleCheckboxChange = (id: number) => {
     setOptions((prevOptions) =>
-      prevOptions.map((option) =>
-        option.id === id ? { ...option, checked: !option.checked } : option
-      )
+      prevOptions.map((option) => (option.id === id ? { ...option, checked: !option.checked } : option)),
     );
   };
 
@@ -46,8 +44,7 @@ const MainContent: React.FC<ProfileCardsProps> = ({users}) => {
           <div className="flex flex-col  w-full max-md:ml-0 max-md:w-full">
             <div className="flex flex-col w-full max-md:mt-3.5 max-md:max-w-full">
               <div
-                className={`flex flex-wrap gap-10 self-end max-w-full font-black w-full max-[768px]:w-full justify-center ${styles.fadeIn}`}
-              >
+                className={`flex flex-wrap gap-10 self-end max-w-full font-black w-full max-[768px]:w-full justify-center ${styles.fadeIn}`}>
                 <div className="flex gap-2.5 items-center px-4 py-2 text-lg text-teal-500 bg-emerald-50 rounded-lg relative">
                   <Image
                     loading="lazy"
@@ -55,10 +52,7 @@ const MainContent: React.FC<ProfileCardsProps> = ({users}) => {
                     alt=""
                     className="object-contain shrink-0 self-stretch my-auto rounded-none aspect-square w-[26px]"
                   />
-                  <CommonButton
-                    onClick={() => {}}
-                    className="px-0 !bg-emerald-50 text-[#14b8a6] "
-                  >
+                  <CommonButton onClick={() => {}} className="px-0 !bg-emerald-50 text-[#14b8a6] ">
                     월 100만원
                   </CommonButton>
                   <Image
@@ -69,7 +63,7 @@ const MainContent: React.FC<ProfileCardsProps> = ({users}) => {
                   />
                 </div>
               </div>
-              <ProfileCards users={users}/>
+              <ProfileCards users={users} />
             </div>
             <div className="grid grid-cols-2  md:hidden">
               {options.map((option) => (

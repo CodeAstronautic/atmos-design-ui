@@ -1,26 +1,25 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
-import marketingIcon from '../../../assets/image/icon/marketing.svg'
-import galleryIcon from '../../../assets/image/icon/gallery-icon.svg'
-import boxIcon from '../../../assets/image/icon/box-icon.svg'
-import targetIcon from '../../../assets/image/icon/target-icon.svg'
-import phoneIcon from '../../../assets/image/icon/phone-icon.svg'
-import styles from './styles.module.css'
+import marketingIcon from '../../../assets/image/icon/marketing.svg';
+import galleryIcon from '../../../assets/image/icon/gallery-icon.svg';
+import boxIcon from '../../../assets/image/icon/box-icon.svg';
+import targetIcon from '../../../assets/image/icon/target-icon.svg';
+import phoneIcon from '../../../assets/image/icon/phone-icon.svg';
+import styles from './styles.module.css';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const services = [
-  { icon: marketingIcon, title: "해외 마케팅" },
-  { icon: galleryIcon, title: "퍼블리셔" },
-  { icon: boxIcon, title: "캐드원(제도사)" },
-  { icon: targetIcon, title: "해외 세일즈" },
-  { icon: phoneIcon, title: "해외 CS" },
-  { icon: phoneIcon, title: "해외 마케팅" },
+  { icon: marketingIcon, title: '해외 마케팅' },
+  { icon: galleryIcon, title: '퍼블리셔' },
+  { icon: boxIcon, title: '캐드원(제도사)' },
+  { icon: targetIcon, title: '해외 세일즈' },
+  { icon: phoneIcon, title: '해외 CS' },
+  { icon: phoneIcon, title: '해외 마케팅' },
 ];
 
 const ServiceSection: React.FC = () => {
-
   const settings = {
     dots: false,
     infinite: true,
@@ -30,7 +29,7 @@ const ServiceSection: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
-    cssEase: "linear",
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1440,
@@ -66,15 +65,13 @@ const ServiceSection: React.FC = () => {
   };
 
   return (
-
     <Slider {...settings}>
       {services.map((service, index) => (
-        <div key={index} className={styles?.fadeIn} >
+        <div key={index} className={styles?.fadeIn}>
           <ServiceCard icon={service.icon} title={service.title} />
         </div>
       ))}
     </Slider>
-
   );
 };
 

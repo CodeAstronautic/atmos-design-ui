@@ -1,23 +1,33 @@
 import React from 'react';
 import styles from './styles.module.css';
-import polygonDown from '../../../../assets/image/icon/polygon-down.svg'
-import polygonDownMobile from '../../../../assets/image/icon/poligon-mobile.svg'
+import polygonDown from '../../../../assets/image/icon/polygon-down.svg';
+import polygonDownMobile from '../../../../assets/image/icon/poligon-mobile.svg';
 import Image from 'next/image';
 import CommonButton from '@/components/atoms/CommonButton/CommonButton';
-
 
 const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col gap-4 mt-10 max-sm:mt-0 w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-9 max-w-full w-[449px]">
         <div className={`flex  flex-col justify-center relative ${styles.fadeIn}`}>
-
-          <CommonButton onClick={() => {}} className="font-black text-[18px] text-[#40E2E8] max-md:bg-[#8BC4FF] max-md:text-white">
+          <CommonButton
+            onClick={() => {}}
+            className="font-black text-[18px] text-[#40E2E8] max-md:bg-[#8BC4FF] max-md:text-white">
             풀타임, 파트타임
           </CommonButton>
           <div className="flex gap-2.5 items-start self-start px-2.5 absolute left-0 bottom-[-10px] ">
-            <Image loading="lazy" src={polygonDown} alt="" className="object-contain w-3.5 rounded-sm aspect-square max-md:hidden" />
-            <Image loading="lazy" src={polygonDownMobile} alt="" className="object-contain w-3.5 rounded-sm aspect-square hidden max-md:block " />
+            <Image
+              loading="lazy"
+              src={polygonDown}
+              alt=""
+              className="object-contain w-3.5 rounded-sm aspect-square max-md:hidden"
+            />
+            <Image
+              loading="lazy"
+              src={polygonDownMobile}
+              alt=""
+              className="object-contain w-3.5 rounded-sm aspect-square hidden max-md:block "
+            />
           </div>
         </div>
       </div>

@@ -71,22 +71,14 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
   };
 
   return (
-    <div
-      className={`py-10 relative slider-cards max-[479px]:pt-2 ${styles.sliderWrapper}`}
-    >
+    <div className={`py-10 relative slider-cards max-[479px]:pt-2 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
         {users.map((person, index) => {
-          const isLeftCard =
-            (activeSlide === 0 && index === users.length - 1) ||
-            activeSlide === index + 1;
+          const isLeftCard = (activeSlide === 0 && index === users.length - 1) || activeSlide === index + 1;
           return (
-            <div
-              key={index}
-              className={`py-4 ${activeSlide === index ? 'slick-current' : ''}`}
-            >
+            <div key={index} className={`py-4 ${activeSlide === index ? 'slick-current' : ''}`}>
               <div
-                className={`bg-white rounded-2xl shadow-md p-6 text-center ${isLeftCard ? 'max-[425px]:mx-[40px]' : ''} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[197px]'}`}
-              >
+                className={`bg-white rounded-2xl shadow-md p-6 text-center ${isLeftCard ? 'max-[425px]:mx-[40px]' : ''} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[197px]'}`}>
                 <div className="h-[120px] w-[120px] mx-auto rounded-full relative max-md:h-[64px] max-md:w-[64px]">
                   <Image
                     loading="lazy"
@@ -102,9 +94,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
                   />
                 </div>
                 <div className="mt-4">
-                  <h2 className="text-[24px] font-black text-[#24252F] max-md:text-[18px]">
-                    {person.name}
-                  </h2>
+                  <h2 className="text-[24px] font-black text-[#24252F] max-md:text-[18px]">{person.name}</h2>
                   <p className="text-[#4A77FF] text-[16px] font-black max-md:text-[14px]">
                     {person.role} · {person.experience}
                   </p>
@@ -113,8 +103,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
                   {person.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="inline-block text-[#5E626F] rounded-[6px] py-1 px-3 text-[16px] font-black bg-transparent border border-[#C1C5CF] max-md:text-[14px]"
-                    >
+                      className="inline-block text-[#5E626F] rounded-[6px] py-1 px-3 text-[16px] font-black bg-transparent border border-[#C1C5CF] max-md:text-[14px]">
                       {skill}
                     </span>
                   ))}
