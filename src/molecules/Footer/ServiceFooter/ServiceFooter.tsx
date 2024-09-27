@@ -1,11 +1,7 @@
+import { ServiceFooterProps } from '@/interface/types';
 import Image from 'next/image';
 import React from 'react';
 
-interface ServiceFooterProps {
-  icon: string;
-  title: string;
-  link: string;
-}
 
 const ServiceFooter: React.FC<ServiceFooterProps> = ({ icon, title, link }) => {
   return (

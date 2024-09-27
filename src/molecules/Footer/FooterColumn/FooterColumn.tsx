@@ -1,11 +1,5 @@
+import { FooterColumnProps } from '@/interface/types';
 import React from 'react';
-
-interface FooterColumnProps {
-  companyName: string;
-  ceo: string;
-  ceoNameIndia: string;
-  companyNameIndia: string;
-}
 
 const FooterColumn: React.FC<FooterColumnProps> = ({ companyName, ceo, ceoNameIndia, companyNameIndia }) => {
   return (

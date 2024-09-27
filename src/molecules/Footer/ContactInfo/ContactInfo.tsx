@@ -1,10 +1,6 @@
+import { ContactInfoProps } from '@/interface/types';
 import React from 'react';
 
-interface ContactInfoProps {
-  description: string;
-  phone: string;
-  email: string;
-}
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ description, phone, email }) => {
   return (

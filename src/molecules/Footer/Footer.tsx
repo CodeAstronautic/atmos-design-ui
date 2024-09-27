@@ -1,26 +1,16 @@
-import React from "react";
-import FooterColumn from "./FooterColumn/FooterColumn";
-import FooterInfo from "./FooterInfo/FooterInfo";
-import Image from "next/image";
-import ServiceFooter from "./ServiceFooter/ServiceFooter";
-import ContactInfo from "./ContactInfo/ContactInfo";
-import footerLogo from "../../assets/image/footer-logo.svg";
-import serviceCodeIcon from "../../assets/image/icon/service-code-icon.svg";
-import serviceAvtarIcon from "../../assets/image/icon/service-avatar-icon.svg";
-import servicKorIcon from "../../assets/image/icon/service-kor-icon.svg";
-import servicSettingIcon from "../../assets/image/icon/service-setting-icon.svg";
-import arrowRight from "../../assets/image/icon/arrow-right.svg";
-
-interface FooterProps {
-  companyName: string;
-  ceo: string;
-  ceoNameIndia: string;
-  companyNameIndia: string;
-  businessNumber: string;
-  cinNumber: string;
-  addressKorea: string;
-  addressIndia: string;
-}
+import React from 'react';
+import FooterColumn from './FooterColumn/FooterColumn';
+import FooterInfo from './FooterInfo/FooterInfo';
+import Image from 'next/image';
+import ServiceFooter from './ServiceFooter/ServiceFooter';
+import ContactInfo from './ContactInfo/ContactInfo';
+import footerLogo from '../../assets/image/footer-logo.svg';
+import serviceCodeIcon from '../../assets/image/icon/service-code-icon.svg';
+import serviceAvtarIcon from '../../assets/image/icon/service-avatar-icon.svg';
+import servicKorIcon from '../../assets/image/icon/service-kor-icon.svg';
+import servicSettingIcon from '../../assets/image/icon/service-setting-icon.svg';
+import arrowRight from '../../assets/image/icon/arrow-right.svg';
+import { FooterProps } from '@/interface/types';
 
 const Footer: React.FC<FooterProps> = ({
   companyName,
@@ -34,28 +24,28 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   const contactInfo = {
     logoSrc: footerLogo,
-    description: "우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.",
-    phone: "010-0000-0000",
-    email: "aaaaa@naver.com",
+    description: '우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.',
+    phone: '010-0000-0000',
+    email: 'aaaaa@naver.com',
     services: [
       {
         icon: serviceCodeIcon,
-        title: "해외 개발자 원격 채용",
+        title: '해외 개발자 원격 채용',
         link: arrowRight,
       },
       {
         icon: serviceAvtarIcon,
-        title: "외국인 원격 채용 (비개발)",
+        title: '외국인 원격 채용 (비개발)',
         link: arrowRight,
       },
       {
         icon: servicKorIcon,
-        title: "한국어 가능 외국인 채용",
+        title: '한국어 가능 외국인 채용',
         link: arrowRight,
       },
       {
         icon: servicSettingIcon,
-        title: "해외 개발자 활용 서비스",
+        title: '해외 개발자 활용 서비스',
         link: arrowRight,
       },
     ],
@@ -80,9 +70,7 @@ const Footer: React.FC<FooterProps> = ({
                   <div className="flex gap-5 max-md:flex-col">
                     <div className="flex flex-col  max-md:w-full">
                       <div className="grid grid-cols-4 max-[576px]:grid-cols-2 grow gap-4 items-center ">
-                        {contactInfo?.services.map((service, index) => (
-                          <ServiceFooter key={index} {...service} />
-                        ))}
+                        {contactInfo?.services.map((service, index) => <ServiceFooter key={index} {...service} />)}
                       </div>
                     </div>
                   </div>

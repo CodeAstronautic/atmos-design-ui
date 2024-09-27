@@ -1,11 +1,6 @@
+import { FooterInfoProps } from '@/interface/types';
 import React from 'react';
 
-interface FooterInfoProps {
-  businessNumber: string;
-  cinNumber: string;
-  addressKorea: string;
-  addressIndia: string;
-}
 
 const FooterInfo: React.FC<FooterInfoProps> = ({
   businessNumber,
