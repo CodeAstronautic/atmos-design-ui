@@ -73,7 +73,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
   return (
     <div className={`py-10 relative slider-cards max-[479px]:pt-2 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
-        {users.map((person, index) => {
+        {users?.map((person, index) => {
           const isLeftCard = (activeSlide === 0 && index === users.length - 1) || activeSlide === index + 1;
           return (
             <div key={index} className={`py-4 ${activeSlide === index ? 'slick-current' : ''}`}>
