@@ -3,7 +3,6 @@ import React from 'react';
 import Home from './home';
 
 const HomePage = ({ users }: any) => {
-  console.log(users, 'datadata');
   return <Home users={users}/>;
 };
 
