@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import HeroSection from "./HeroSection/HeroSection";
 import FeatureSection from "./FeatureSection/FeatureSection";
 import ProfileCards from "./ProfileCards/ProfileCards";
-import CommonButton from "@/components/CommonButton/CommonButton";
 import dollorIcon from "../../../assets/image/icon/dollorIcon.svg";
 import polygonDown from "../../../assets/image/icon/polygon-down.svg";
 import styles from "./styles.module.css";
 
 import Image from "next/image";
+import CommonButton from "@/atoms/CommonButton/CommonButton";
+import { User } from "@/interface/types";
 
 interface Option {
   id: number;
   label: string;
   checked: boolean;
 }
+interface ProfileCardsProps {
+  users: User[];
+}
 
-const MainContent: React.FC = () => {
+const MainContent: React.FC<ProfileCardsProps> = ({users}) => {
   const [options, setOptions] = useState<Option[]>([
     { id: 1, label: "한국어 능력", checked: true },
     { id: 2, label: "업무 수행 능력", checked: true },
@@ -65,7 +69,7 @@ const MainContent: React.FC = () => {
                   />
                 </div>
               </div>
-              <ProfileCards />
+              <ProfileCards users={users}/>
             </div>
             <div className="grid grid-cols-2  md:hidden">
               {options.map((option) => (

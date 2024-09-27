@@ -4,7 +4,7 @@ import logo from '../../assets/image/logo.svg';
 import accordion from '../../assets/image/icon/accordion.svg';
 import accordionBlack from '../../assets/image/icon/accordion-black.svg';
 import menuIcon from '../../assets/image/icon/menu-icon.svg';
-import CommonButton from '../CommonButton/CommonButton';
+import CommonButton from '../../atoms/CommonButton/CommonButton';
 
 type HeaderProps = {
   onInquiryClick: () => void;
