@@ -1,8 +1,9 @@
-import Header from '@/molecules/Header/Header';
+import Header from '@/components/molecules/Header/Header';
 import MainContent from '../../components/Home/MainContent/MainContent';
-import Footer from '@/molecules/Footer/Footer';
 import ServiceSection from '../../components/Home/ServiceSection/ServiceSection';
 import { footerProps } from '@/utils/constant';
+import Footer from '@/components/molecules/Footer/Footer';
+
 
 
 const Home = ({ users }:any) => {

@@ -7,8 +7,8 @@ import polygonDown from "../../../assets/image/icon/polygon-down.svg";
 import styles from "./styles.module.css";
 
 import Image from "next/image";
-import CommonButton from "@/atoms/CommonButton/CommonButton";
 import { User } from "@/interface/types";
+import CommonButton from "@/components/atoms/CommonButton/CommonButton";
 
 interface Option {
   id: number;

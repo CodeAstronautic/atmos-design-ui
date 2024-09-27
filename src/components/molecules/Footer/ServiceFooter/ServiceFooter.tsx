@@ -7,7 +7,7 @@ const ServiceFooter: React.FC<ServiceFooterProps> = ({ icon, title, link }) => {
   return (
     <div className="flex overflow-hidden flex-col items-start self-stretch p-4 my-auto bg-white rounded-xl">
       <div className="flex flex-col">
-        <div className="flex flex-col justify-center items-center px-2  h-10 bg-gray-100 rounded-lg">
+        <div className="flex flex-col justify-center items-center px-2 w-10 h-10 bg-gray-100 rounded-lg">
           <Image loading="lazy" src={icon} alt={title} className="object-contain w-full aspect-square" />
         </div>
         <div className="mt-3 text-[14px] leading-[21px] text-[#343741] font-black">{title}</div>

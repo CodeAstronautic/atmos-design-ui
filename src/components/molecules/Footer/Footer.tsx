@@ -4,12 +4,12 @@ import FooterInfo from './FooterInfo/FooterInfo';
 import Image from 'next/image';
 import ServiceFooter from './ServiceFooter/ServiceFooter';
 import ContactInfo from './ContactInfo/ContactInfo';
-import footerLogo from '../../assets/image/footer-logo.svg';
-import serviceCodeIcon from '../../assets/image/icon/service-code-icon.svg';
-import serviceAvtarIcon from '../../assets/image/icon/service-avatar-icon.svg';
-import servicKorIcon from '../../assets/image/icon/service-kor-icon.svg';
-import servicSettingIcon from '../../assets/image/icon/service-setting-icon.svg';
-import arrowRight from '../../assets/image/icon/arrow-right.svg';
+import footerLogo from '../../../assets/image/footer-logo.svg';
+import serviceCodeIcon from '../../../assets/image/icon/service-code-icon.svg';
+import serviceAvtarIcon from '../../../assets/image/icon/service-avatar-icon.svg';
+import servicKorIcon from '../../../assets/image/icon/service-kor-icon.svg';
+import servicSettingIcon from '../../../assets/image/icon/service-setting-icon.svg';
+import arrowRight from '../../../assets/image/icon/arrow-right.svg';
 import { FooterProps } from '@/interface/types';
 
 const Footer: React.FC<FooterProps> = ({

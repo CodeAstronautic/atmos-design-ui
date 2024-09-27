@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import polygonDown from '../../../../assets/image/icon/polygon-down.svg'
 import polygonDownMobile from '../../../../assets/image/icon/poligon-mobile.svg'
 import Image from 'next/image';
-import CommonButton from '@/atoms/CommonButton/CommonButton';
+import CommonButton from '@/components/atoms/CommonButton/CommonButton';
 
 
 const HeroSection: React.FC = () => {
