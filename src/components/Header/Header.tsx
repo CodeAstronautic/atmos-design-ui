@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
 
   return (
     <div className="w-full py-[18px] px-20 max-[768px]:px-4  flex flex-wrap gap-5 justify-between items-center max-w-full text-base font-black text-center relative">
-      <div className='flex items-center gap-3'>
+      <div className="flex items-center gap-3">
         <Image
           src={logo}
           alt="Company logo"
@@ -38,12 +38,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
       <nav className="hidden md:flex gap-10 justify-center items-start self-stretch my-auto text-white">
         <div className="flex gap-2 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
           <div className="self-stretch my-auto font-[poppins]">채용</div>
-          <Image
-            loading="lazy"
-            src={accordion}
-            alt=""
-            className="object-contain shrink-0 my-auto w-4 aspect-square"
-          />
+          <Image loading="lazy" src={accordion} alt="" className="object-contain shrink-0 my-auto w-4 aspect-square" />
           {isDropdownOpen && (
             <div className="absolute bg-white text-left rounded shadow-lg top-[30px]">
               <div className="text-[#344054] font-bold px-4 py-2.5 ">채용</div>
@@ -70,12 +65,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
         <div className="absolute top-[60px] left-0 w-full bg-white text-black  shadow-lg p-4 flex flex-col z-50">
           <div className="flex gap-2 items-center justify-center" onClick={toggleDropdown}>
             <div className="font-bold">채용</div>
-            <Image
-              loading="lazy"
-              src={accordionBlack}
-              alt=""
-              className="object-contain w-4 "
-            />
+            <Image loading="lazy" src={accordionBlack} alt="" className="object-contain w-4 " />
           </div>
           {isDropdownOpen && (
             <div className="bg-gray-100 p-2 rounded">
@@ -96,4 +86,3 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
 };
 
 export default Header;
-
