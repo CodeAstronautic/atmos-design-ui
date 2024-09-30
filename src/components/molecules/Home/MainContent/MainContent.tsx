@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+import HeroSection from './HeroSection/HeroSection';
 import FeatureSection from './FeatureSection/FeatureSection';
-import dollorIcon from '../../../assets/image/icon/dollorIcon.svg';
-import polygonDown from '../../../assets/image/icon/polygon-down.svg';
+import ProfileCards from './ProfileCards/ProfileCards';
+import dollorIcon from '../../../../assets/image/icon/dollorIcon.svg';
+import polygonDown from '../../../../assets/image/icon/polygon-down.svg';
 import styles from './styles.module.css';
 
 import Image from 'next/image';
-import CommonButton from '@/components/atoms/CommonButton/CommonButton';
-import ProfileCards from '@/components/molecules/Home/MainContent/ProfileCards/ProfileCards';
 import { User } from '@/interface/types';
-import HeroSection from '@/components/molecules/Home/MainContent/HeroSection/HeroSection';
+import CommonButton from '@/components/atoms/CommonButton/CommonButton';
 
 interface Option {
   id: number;

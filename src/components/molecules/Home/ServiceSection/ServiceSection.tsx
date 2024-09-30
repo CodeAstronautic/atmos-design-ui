@@ -1,14 +1,14 @@
 import React from 'react';
-import marketingIcon from '../../../assets/image/icon/marketing.svg';
-import galleryIcon from '../../../assets/image/icon/gallery-icon.svg';
-import boxIcon from '../../../assets/image/icon/box-icon.svg';
-import targetIcon from '../../../assets/image/icon/target-icon.svg';
-import phoneIcon from '../../../assets/image/icon/phone-icon.svg';
+import ServiceCard from './ServiceCard';
+import marketingIcon from '../../../../assets/image/icon/marketing.svg';
+import galleryIcon from '../../../../assets/image/icon/gallery-icon.svg';
+import boxIcon from '../../../../assets/image/icon/box-icon.svg';
+import targetIcon from '../../../../assets/image/icon/target-icon.svg';
+import phoneIcon from '../../../../assets/image/icon/phone-icon.svg';
 import styles from './styles.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ServiceCard from '@/components/molecules/Home/ServiceSection/ServiceCard';
 
 const services = [
   { icon: marketingIcon, title: '해외 마케팅' },

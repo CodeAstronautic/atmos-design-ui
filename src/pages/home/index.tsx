@@ -1,10 +1,10 @@
 import Header from '@/components/molecules/Header/Header';
-import MainContent from '../../components/Home/MainContent/MainContent';
-import ServiceSection from '../../components/Home/ServiceSection/ServiceSection';
 import { footerProps } from '@/utils/constant';
 import Footer from '@/components/molecules/Footer/Footer';
 import { NextPage } from 'next';
 import { User } from '@/interface/types';
+import MainContent from '@/components/molecules/Home/MainContent/MainContent';
+import ServiceSection from '@/components/molecules/Home/ServiceSection/ServiceSection';
 
 interface ProfileCardsProps {
   users: User[];

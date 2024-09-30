@@ -1,6 +1,6 @@
 import React from 'react';
+import FeatureCard from './FeatureCard';
 import styles from './styles.module.css';
-import FeatureCard from '@/components/molecules/Home/MainContent/FeatureSection/FeatureCard';
 import { featuresData } from '@/utils/constant';
 
 const FeatureSection: React.FC = () => {
