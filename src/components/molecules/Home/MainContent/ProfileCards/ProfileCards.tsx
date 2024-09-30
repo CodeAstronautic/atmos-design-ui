@@ -57,7 +57,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
         breakpoint: 479,
         settings: {
           slidesToShow: 3,
-          centerPadding: '20px',
+          centerPadding: '0px',
         },
       },
       {
@@ -71,20 +71,22 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
   };
 
   return (
-    <div className={`py-10 relative slider-cards max-[479px]:pt-2 ${styles.sliderWrapper}`}>
+    <div className={`py-8 relative slider-cards max-[479px]:pt-4 max-md:pb-6 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
         {users?.map((person, index) => {
           const isLeftCard = (activeSlide === 0 && index === users.length - 1) || activeSlide === index + 1;
+          const isRightCard = (activeSlide === users.length - 1 && index === 0) || activeSlide === index - 1; 
+
           return (
-            <div key={index} className={`py-4 ${activeSlide === index ? 'slick-current' : ''}`}>
+            <div key={index} className={` ${activeSlide === index ? 'slick-current' : ''}`}>
               <div
-                className={`bg-white rounded-2xl shadow-md p-6 text-center ${isLeftCard ? 'max-[425px]:mx-[40px]' : ''} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[197px]'}`}>
-                <div className="h-[120px] w-[120px] mx-auto rounded-full relative max-md:h-[64px] max-md:w-[64px]">
+                className={`bg-white rounded-2xl shadow-md p-9 max-md:px-[16px] text-center ${isLeftCard ? '!bg-[#EDFCFF] max-[479px]:mx-[74px] max-[425px]:mx-[60px] max-[375px]:mx-[70px]' : ''} ${isRightCard ? "!bg-[#EDFCFF] max-[479px]:mx-[-47px] max-[425px]:mx-[-22px] max-[375px]:mx-[-20px]" : ""} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[218px] max-[375px]:w-[204px] max-[360px]:w-[197px]'}`}>
+                <div className="h-[120px] w-[120px] mx-auto rounded-full relative max-md:h-[64px] max-md:w-[69px]">
                   <Image
                     loading="lazy"
                     src={avtar}
                     alt="user"
-                    className="object-contain max-w-full rounded-none aspect-square w-[120px]"
+                    className="object-contain max-w-full rounded-none aspect-square w-[120px] h-full"
                   />
                   <Image
                     loading="lazy"

@@ -34,9 +34,9 @@ const MainContent: React.FC<ProfileCardsProps> = ({ users }) => {
   };
 
   return (
-    <main className="flex flex-col pb-20 px-20 max-[768px]:px-4 rounded-none ">
-      <div className="mt-[60px] max-w-full w-[1680px] max-md:mt-10">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:flex-col">
+    <main className="flex flex-col pb-[60px] px-20 max-[768px]:px-4 rounded-none ">
+      <div className="mt-[61px] max-w-full w-[1680px] max-md:mt-[36px]">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-5 max-md:flex-col max-md:gap-[36px]">
           <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
             <HeroSection />
             <FeatureSection />

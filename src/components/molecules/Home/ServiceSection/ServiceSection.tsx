@@ -24,7 +24,7 @@ const ServiceSection: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow:5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -65,6 +65,7 @@ const ServiceSection: React.FC = () => {
   };
 
   return (
+    <div className='service-cards'>
     <Slider {...settings}>
       {services.map((service, index) => (
         <div key={index} className={styles?.fadeIn}>
@@ -72,6 +73,8 @@ const ServiceSection: React.FC = () => {
         </div>
       ))}
     </Slider>
+
+    </div>
   );
 };
 

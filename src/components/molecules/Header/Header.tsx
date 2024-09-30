@@ -31,11 +31,11 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
           width={60}
           height={60}
           loading="lazy"
-          className="object-contain shrink-0 my-auto max-w-full aspect-[5.43] w-[114px]"
+          className="object-contain shrink-0 my-auto max-w-full aspect-[5.43] w-[114px] h-[21px]"
         />
       </div>
 
-      <nav className="hidden md:flex gap-10 justify-center items-start self-stretch my-auto text-white">
+      <nav className="hidden md:flex gap-[60px] justify-center items-start self-stretch my-auto text-white">
         <div className="flex gap-2 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
           <div className="self-stretch my-auto font-[poppins]">채용</div>
           <Image loading="lazy" src={accordion} alt="" className="object-contain shrink-0 my-auto w-4 aspect-square" />
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
         </button>
       </div>
 
-      <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF] max-sm:hidden">
+      <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF] max-sm:hidden px-6 py-1.5">
         문의하기
       </CommonButton>
 
@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
             </div>
           )}
           <div className="mt-4">해외 개발자 활용 서비스</div>
-          <CommonButton onClick={onInquiryClick} className="mt-4 text-[#4A77FF]">
+          <CommonButton onClick={onInquiryClick} className="mt-4 text-[#4A77FF] px-6 py-1.5">
             문의하기
           </CommonButton>
         </div>

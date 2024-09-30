@@ -9,6 +9,7 @@ type ServiceCardProps = {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title }) => {
   return (
     <div className="flex overflow-hidden gap-6 items-center p-4 rounded-xl bg-white bg-opacity-20 min-w-[240px] w-[320px] max-[1600px]:w-[290px]">
+    {/* // <div className="flex overflow-hidden gap-6 items-center p-4 rounded-xl bg-white bg-opacity-20 w-full"> */}
       <div className="flex gap-2.5 items-center self-stretch p-3 my-auto w-14 h-14 rounded-lg bg-white bg-opacity-40">
         <Image loading="lazy" src={icon} alt="" className="object-contain w-8 aspect-square" />
       </div>
