@@ -99,6 +99,14 @@ body {
 }
 
 
+@media(max-width:1240px){
+  .slider-cards .slick-prev {
+    left: 5px;
+}
+.slider-cards .slick-next {
+  right: -10px;
+}
+}
 @media(max-width:1200px){
 
   .slider-cards .slick-center {
@@ -116,6 +124,8 @@ body {
   right: -5px;
 }
 }
+
+
 @media(max-width:768px){
   .slider-cards{
     width: 340px !important;
