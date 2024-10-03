@@ -33,7 +33,6 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
           slidesToShow: 2.93,
           slidesToScroll: 1,
           centerPadding: '44px',
-
         },
       },
       {
