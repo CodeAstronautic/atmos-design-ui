@@ -32,6 +32,12 @@ const ServiceSection: React.FC = () => {
     cssEase: 'linear',
     responsive: [
       {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
         breakpoint: 1440,
         settings: {
           slidesToShow: 4,

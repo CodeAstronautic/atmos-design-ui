@@ -37,8 +37,10 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2.93,
           slidesToScroll: 1,
+          centerPadding: '0px',
+
         },
       },
       {
@@ -80,7 +82,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
           return (
             <div key={index} className={` ${activeSlide === index ? 'slick-current' : ''}`}>
               <div
-                className={`bg-white rounded-2xl shadow-md p-9 max-md:px-[16px] text-center ${isLeftCard ? '!bg-[#EDFCFF] max-[479px]:mx-[74px] max-[425px]:mx-[60px] max-[375px]:mx-[70px]' : ''} ${isRightCard ? '!bg-[#EDFCFF] max-[479px]:mx-[-47px] max-[425px]:mx-[-22px] max-[375px]:mx-[-20px]' : ''} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[218px] max-[375px]:w-[204px] max-[360px]:w-[197px]'}`}>
+                className={`bg-white rounded-2xl shadow-md p-9 max-md:px-[16px] text-center ${isLeftCard ? '!bg-[#EDFCFF]  max-[1200px]:mx-[105px] max-[768px]:mx-[136px] max-[479px]:mx-[74px] max-[425px]:mx-[60px] max-[375px]:mx-[70px]' : ''} ${isRightCard ? '!bg-[#EDFCFF]  max-[1200px]:mx-[-80px] max-[768px]:mx-[-100px] max-[479px]:mx-[-47px] max-[425px]:mx-[-22px] max-[375px]:mx-[-20px]' : ''} ${activeSlide === index ? 'w-[291px] max-w-[291px] max-[425px]:w-[234px]' : 'w-[291px] max-w-[291px] max-[425px]:w-[218px] max-[375px]:w-[204px] max-[360px]:w-[197px]'}`}>
                 <div className="h-[120px] w-[120px] mx-auto rounded-full relative max-md:h-[64px] max-md:w-[69px]">
                   <Image
                     loading="lazy"
