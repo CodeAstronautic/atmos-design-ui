@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <div className="flex flex-col justify-center py-[80px] rounded-none  px-20 max-[768px]:px-4 w-full container mx-auto max-md:py-[64px]">
+    <div className="flex flex-col justify-center py-[80px] rounded-none  px-20 max-[1200px]:px-8 max-[768px]:px-4 w-full container mx-auto max-md:py-[64px]">
       <div className="flex flex-col justify-center items-center pb-[46px] w-full bg-zinc-50 max-[768px]:pb-8 max-[576px]:pb-[60px]  max-md:max-w-full">
         <div className="flex flex-col w-full">
           <div className="w-full max-md:max-w-full">

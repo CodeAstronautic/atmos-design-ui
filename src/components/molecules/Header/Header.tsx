@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
   };
 
   return (
-    <div className="w-full py-[18px] px-20 max-[768px]:px-4  flex flex-wrap gap-5 justify-between items-center max-w-full text-base font-black text-center relative">
+    <div className="w-full py-[18px] px-20 max-[768px]:px-4  flex flex-wrap gap-5 justify-between items-center max-w-full text-base font-black text-center relative max-[1200px]:px-8">
       <div className="flex items-center gap-3">
         <Image
           src={logo}

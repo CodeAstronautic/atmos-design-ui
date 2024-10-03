@@ -200,3 +200,9 @@ body {
   }
 
 }
+
+@media(min-width:1701px) and (max-width:1799px){
+ .service-tab-slide{
+  margin-left: 11rem !important;
+ }
+} 

@@ -40,7 +40,7 @@ const ServiceSection: React.FC = () => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
