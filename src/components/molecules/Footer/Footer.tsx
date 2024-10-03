@@ -103,9 +103,7 @@ const Footer: React.FC<FooterProps> = ({
             </div>
           </div>
         </div>
-        <div className="w-full text-[13px] leading-[19.5px] text-[#5E626F] font-black">
-          ⓒ 2023 Hyperhire
-        </div>
+        <div className="w-full text-[13px] leading-[19.5px] text-[#5E626F] font-black">ⓒ 2023 Hyperhire</div>
       </div>
     </div>
   );

@@ -48,8 +48,7 @@ const HeroSection: React.FC = () => {
             1주일 이내에 원격으로 채용해보세요.
           </p>
           <p className="flex-auto hidden max-md:block font-black text-2xl leading-[34px] text-[#FFFFFFCC] text-opacity-90 max-md:text-[18px] max-md:leading-[27px]">
-            법률 및 인사관리 부담없이
-            1주일 이내에 원격으로 채용해보세요.
+            법률 및 인사관리 부담없이 1주일 이내에 원격으로 채용해보세요.
           </p>
         </div>
         <div className="self-start mt-2  text-lg  leading-[27px] font-black text-white max-md:ml-2.5 max-md:hidden">
