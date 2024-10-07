@@ -14,9 +14,9 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ companyName, ceo, ceoNameIn
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="text-[12px] leading-[21px] text-[#343741] font-black max-md:leading-[18px">대표 CEO</div>
+            <div className="text-[12px] leading-[21px] text-[#343741] font-black max-md:leading-[18px]">대표 CEO</div>
             <div className="mt-[10px] text-[13px] leading-[19.5px] text-[#5E626F] font-black">{ceo}</div>
-            <div className="mt-[5px] text-[13px] leading-[19.5px] text-[#5E626F] font-black break-words">
+            <div className="mt-[5px] text-[13px] leading-[19.5px] text-[#5E626F] font-black break-words w-max">
               {ceoNameIndia}
             </div>
           </div>

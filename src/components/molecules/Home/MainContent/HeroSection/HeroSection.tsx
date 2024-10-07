@@ -7,7 +7,7 @@ import CommonButton from '@/components/atoms/CommonButton/CommonButton';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col gap-4 mt-10 max-sm:mt-0 w-full max-md:mt-10 max-md:max-w-full">
+    <section className="flex flex-col gap-5 mt-10 max-sm:mt-0 w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-9 max-w-full w-[449px]">
         <div className={`flex  flex-col justify-center relative ${styles.fadeInDelayed}`}>
           <CommonButton
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
       <div className="flex flex-col gap-4 self-end max-w-full w-[747px] ">
         <div className="max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
-            <div className={`flex flex-col w-4/5 max-md:w-full  ${styles.fadeInUp}`}>
+            <div className={`flex flex-col max-md:w-full  ${styles.fadeInUp}`}>
               <h1 className="text-5xl font-black leading-[62.4px] text-white text-opacity-90 max-md:max-w-full max-md:text-4xl max-md:leading-[46.8px]">
                 <span className="text-white">최고의 실력</span>을 가진 <br />
                 <span className="text-white">외국인 인재</span>를 찾고 계신가요?

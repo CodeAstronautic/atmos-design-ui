@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <div className="flex flex-col justify-center py-[80px] rounded-none  px-20 max-[1200px]:px-8 max-[768px]:px-4 w-full container mx-auto max-md:py-[64px]">
+    <div className="flex flex-col justify-center py-[80px] rounded-none mt-[15px] px-20 max-[1200px]:px-8 max-[768px]:px-4 w-full container mx-auto max-md:pt-[64px] max-md:pb-[60px] max-md:mt-0">
       <div className="flex flex-col justify-center items-center pb-[46px] w-full bg-zinc-50 max-[768px]:pb-8 max-[576px]:pb-[60px]  max-md:max-w-full">
         <div className="flex flex-col w-full">
           <div className="w-full max-md:max-w-full">
@@ -69,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({
                 <div className="w-full  max-md:max-w-full ">
                   <div className="flex gap-5 max-md:flex-col ">
                     <div className="flex flex-col  max-md:w-full">
-                      <div className="grid grid-cols-4 max-[576px]:grid-cols-2 grow gap-4 items-center ">
+                      <div className="grid grid-cols-4 max-[576px]:grid-cols-2 grow gap-4 items-center max-[576px]:gap-2">
                         {contactInfo?.services.map((service, index) => <ServiceFooter key={index} {...service} />)}
                       </div>
                     </div>

@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
       </div>
 
       <nav className="hidden md:flex gap-[60px] justify-center items-start self-stretch my-auto text-white">
-        <div className="flex gap-2 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
+        <div className="flex gap-2.5 items-center whitespace-nowrap relative" onClick={toggleDropdown}>
           <div className="self-stretch my-auto font-[poppins]">채용</div>
           <Image loading="lazy" src={accordion} alt="" className="object-contain shrink-0 my-auto w-4 aspect-square" />
           {isDropdownOpen && (
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ onInquiryClick }) => {
         </button>
       </div>
 
-      <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF] max-sm:hidden px-6 py-1.5">
+      <CommonButton onClick={onInquiryClick} className="max-md:px-5 text-[#4A77FF] max-sm:hidden px-6 py-1.5 leading-6">
         문의하기
       </CommonButton>
 

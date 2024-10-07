@@ -11,7 +11,7 @@ const ServiceFooter: React.FC<ServiceFooterProps> = ({ icon, title, link }) => {
         </div>
         <div className="text-[14px] leading-[21px] text-[#343741] font-black">{title}</div>
       </div>
-      <div className="flex gap-1 items-start text-sm font-black text-gray-600 whitespace-nowrap">
+      <div className="flex gap-[5.67px] items-start text-sm font-black text-gray-600 whitespace-nowrap">
         <p className="text-[14px] leading-[21px] text-[#5E626F] font-black">바로가기</p>
         <Image loading="lazy" src={link} alt="Link Icon" className="object-contain shrink-0 w-5 aspect-square" />
       </div>

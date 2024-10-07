@@ -73,7 +73,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
   };
 
   return (
-    <div className={`py-8 relative slider-cards max-[479px]:pt-4 max-md:pb-6 ${styles.sliderWrapper}`}>
+    <div className={`pt-7 relative slider-cards max-[479px]:pt-6 max-md:pb-6 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
         {users?.map((person, index) => {
           const isLeftCard = (activeSlide === 0 && index === users.length - 1) || activeSlide === index + 1;
@@ -103,11 +103,11 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
                     {person.role} · {person.experience}
                   </p>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-1 justify-center">
+                <div className="mt-9 flex flex-wrap gap-1 justify-center">
                   {person.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="inline-block text-[#5E626F] rounded-[6px] py-1 px-3 text-[16px] font-black bg-transparent border border-[#C1C5CF] max-md:text-[14px]">
+                      className="inline-block text-[#5E626F] rounded-[6px] py-1 px-3 text-[16px] font-black bg-transparent border border-[#C1C5CF] max-md:text-[14px] leading-[24px]">
                       {skill}
                     </span>
                   ))}
