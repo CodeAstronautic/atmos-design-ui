@@ -19,7 +19,7 @@ const Home: NextPage<ProfileCardsProps> = ({ users }) => {
           <Header onInquiryClick={handleInquiryClick} />
           <MainContent users={users} />
         </div>
-        <div className="pb-[108px] ml-[16.5rem] max-[1800px]:ml-[13rem] max-[1700px]:ml-[10rem] service-tab-slide max-[1600px]:ml-[7rem] max-[1400px]:ml-[9rem] max-[1440px]:ml-[10rem]  max-[1200px]:ml-[7.5rem] max-[1024px]:ml-[2rem] max-[771px]:ml-4 max-md:hidden">
+        <div className="pb-[108px] ml-[254px] max-[1800px]:ml-[13rem] max-[1700px]:ml-[10rem] service-tab-slide max-[1600px]:ml-[7rem] max-[1400px]:ml-[9rem] max-[1440px]:ml-[10rem]  max-[1200px]:ml-[2.5rem] max-[1024px]:ml-8 max-[771px]:ml-[0.5rem] max-md:hidden">
           <ServiceSection />
         </div>
       </div>

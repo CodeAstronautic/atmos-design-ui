@@ -73,6 +73,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
   };
 
   return (
+    <div className='w-full max-md:flex justify-center'>
     <div className={`pt-7 relative slider-cards max-[479px]:pt-6 max-md:pb-6 ${styles.sliderWrapper}`}>
       <Slider {...settings} ref={sliderRef} initialSlide={1}>
         {users?.map((person, index) => {
@@ -117,6 +118,7 @@ const ProfileCards: NextPage<ProfileCardsProps> = ({ users }) => {
           );
         })}
       </Slider>
+    </div>
     </div>
   );
 };
