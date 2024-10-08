@@ -97,6 +97,10 @@ body {
 .slider-cards .slick-next {
   right: -42px;
 }
+.service-cards .slick-track {
+  display: flex;
+  gap: 10px;
+}
 
 
 @media(max-width:1240px){

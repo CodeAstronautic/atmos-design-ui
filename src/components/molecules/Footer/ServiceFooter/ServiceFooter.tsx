@@ -4,7 +4,7 @@ import React from 'react';
 
 const ServiceFooter: React.FC<ServiceFooterProps> = ({ icon, title, link }) => {
   return (
-    <div className="flex overflow-hidden flex-col items-start self-stretch p-4 my-auto bg-white rounded-xl gap-4">
+    <div className="flex overflow-hidden flex-col items-start self-stretch p-4 my-auto bg-white rounded-xl gap-4 h-full">
       <div className="flex flex-col gap-3">
         <div className="flex flex-col justify-center items-center p-2 w-10 h-10 bg-gray-100 rounded-lg">
           <Image loading="lazy" src={icon} alt={title} className="object-contain w-full aspect-square" />

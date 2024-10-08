@@ -52,12 +52,12 @@ const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <div className="flex flex-col justify-center py-[80px] rounded-none mt-[15px] px-20 max-[1200px]:px-8 max-[768px]:px-4 w-full container mx-auto max-md:pt-[64px] max-md:pb-[60px] max-md:mt-0">
+    <div className="flex flex-col justify-center py-[80px] rounded-none mt-[15px] px-20 max-xl:px-10 max-[1200px]:px-8 max-[768px]:px-4 w-full container mx-auto max-md:pt-[64px] max-md:pb-[60px] max-md:mt-0">
       <div className="flex flex-col justify-center items-center pb-[46px] w-full bg-zinc-50 max-[768px]:pb-8 max-[576px]:pb-[60px]  max-md:max-w-full">
         <div className="flex flex-col w-full">
           <div className="w-full max-md:max-w-full">
-            <div className="flex gap-[118px] max-[768px]:gap-8 max-md:flex-col max-[576px]:gap-[18px]">
-              <div className="flex flex-col w-[22%] max-md:w-full gap-4">
+            <div className="flex 2xl:gap-[118px] gap-10 max-lg:gap-8 max-lg:flex-col max-xl:gap-10 max-lg:gap-[18px]">
+              <div className="flex flex-col w-[22%] max-xl:w-[33%] max-lg:w-full gap-4">
                 <Image src={contactInfo?.logoSrc} alt="Company Logo" />
                 <ContactInfo
                   description={contactInfo?.description}
@@ -65,11 +65,11 @@ const Footer: React.FC<FooterProps> = ({
                   email={contactInfo?.email}
                 />
               </div>
-              <div className="flex flex-col  w-[76%] max-md:w-full">
+              <div className="flex flex-col  w-[76%] max-lg:w-full">
                 <div className="w-full  max-md:max-w-full ">
                   <div className="flex gap-5 max-md:flex-col ">
                     <div className="flex flex-col  max-md:w-full">
-                      <div className="grid grid-cols-4 max-[576px]:grid-cols-2 grow gap-4 items-center max-[576px]:gap-2">
+                      <div className="grid grid-cols-4 max-sm:grid-cols-2 grow gap-4 items-center max-[576px]:gap-2">
                         {contactInfo?.services.map((service, index) => <ServiceFooter key={index} {...service} />)}
                       </div>
                     </div>
@@ -81,17 +81,17 @@ const Footer: React.FC<FooterProps> = ({
         </div>
       </div>
       <div className="flex flex-col justify-center items-center w-full bg-zinc-50  max-md:max-w-full gap-[48px] max-md:gap-[36px]">
-        <div className="flex gap-[118px] max-[768px]:gap-8 max-md:flex-col w-full max-[576px]:gap-[36px]">
+        <div className="flex 2xl:gap-[118px] gap-10 max-lg:gap-8 max-lg:flex-col w-full max-[576px]:gap-[36px]">
           <FooterColumn
             companyName={companyName}
             ceo={ceo}
             ceoNameIndia={ceoNameIndia}
             companyNameIndia={companyNameIndia}
           />
-          <div className="flex flex-col  w-[72%]  max-md:w-full">
+          <div className="flex flex-col  w-[72%]  max-lg:w-full">
             <div className="flex flex-col w-full  max-md:max-w-full">
               <div className="z-10 w-full max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col max-md:gap-[36px]">
+                <div className="flex gap-5 max-md:flex-col max-lg:gap-9 max-md:gap-[36px]">
                   <FooterInfo
                     businessNumber={businessNumber}
                     cinNumber={cinNumber}

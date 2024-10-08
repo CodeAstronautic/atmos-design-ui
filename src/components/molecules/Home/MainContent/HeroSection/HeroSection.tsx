@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
         <div className="max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             <div className={`flex flex-col max-md:w-full  ${styles.fadeInUp}`}>
-              <h1 className="text-5xl font-black leading-[62.4px] text-white text-opacity-90 max-md:max-w-full max-md:text-4xl max-md:leading-[46.8px]">
+              <h1 className="text-5xl font-black leading-[62.4px] text-white text-opacity-90 max-md:max-w-full max-lg:text-4xl max-lg:leading-[46.8px]">
                 <span className="text-white">최고의 실력</span>을 가진 <br />
                 <span className="text-white">외국인 인재</span>를 찾고 계신가요?
               </h1>
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className={`flex gap-4 self-start font-black  ${styles.fadeInUp}`}>
-          <p className="flex-auto font-black text-2xl leading-[34px] text-white text-opacity-90 max-md:hidden">
+          <p className="flex-auto font-black text-2xl max-lg:text-xl leading-[34px] text-white text-opacity-90 max-md:hidden">
             법률 및 인사관리 부담없이 <br />
             1주일 이내에 원격으로 채용해보세요.
           </p>

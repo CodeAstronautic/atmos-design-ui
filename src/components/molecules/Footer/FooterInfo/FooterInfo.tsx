@@ -4,7 +4,7 @@ import React from 'react';
 const FooterInfo: React.FC<FooterInfoProps> = ({ businessNumber, cinNumber, addressKorea, addressIndia }) => {
   return (
     <>
-      <div className="flex flex-col w-[17%] max-md:ml-0 max-md:w-full">
+      <div className="flex flex-col 2xl:w-[17%] w-[22%] max-xl:w-[26%] max-md:ml-0 max-lg:w-[32%] max-md:w-full">
         <div className="flex flex-col items-start mt-1 text-sm font-black text-gray-600 max-md:mt-0">
           <div className="text-[12px] leading-[18px] text-[#343741] font-black">사업자등록번호 CIN</div>
           <div className="mt-2.5 text-[13px] leading-[19.5px] text-[#5E626F] font-black">{businessNumber}</div>
